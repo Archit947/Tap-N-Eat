@@ -1,0 +1,460 @@
+3203284612
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QSR Admin Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .dashboard-container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+        }
+
+        .sidebar-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #34495e;
+        }
+
+        .menu-item {
+            padding: 15px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .menu-item:hover {
+            background: #34495e;
+        }
+
+        .menu-item.active {
+            background: #3498db;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 30px;
+        }
+
+        .content-header {
+            background: white;
+            padding: 20px 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .content-header h1 {
+            color: #2c3e50;
+            font-size: 28px;
+        }
+
+        .content-body {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Form Styles */
+        .form-section {
+            margin-bottom: 30px;
+        }
+
+        .form-section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group select {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: #3498db;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #2980b9;
+        }
+
+        .btn-success {
+            background: #27ae60;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #229954;
+        }
+
+        .btn-danger {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #c0392b;
+        }
+
+        .btn-edit {
+            background: #f39c12;
+            color: white;
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+
+        .btn-edit:hover {
+            background: #e67e22;
+        }
+
+        /* Table Styles */
+        .table-container {
+            overflow-x: auto;
+            margin-top: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table thead {
+            background: #34495e;
+            color: white;
+        }
+
+        table th,
+        table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table tbody tr:hover {
+            background: #f8f9fa;
+        }
+
+        table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        /* Alert Messages */
+        .alert {
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .alert.show {
+            display: block;
+        }
+
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .alert-error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        /* Loading Spinner */
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal.show {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+            width: 90%;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .modal-header h2 {
+            color: #2c3e50;
+        }
+
+        .close-modal {
+            font-size: 28px;
+            cursor: pointer;
+            color: #999;
+        }
+
+        .close-modal:hover {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">QSR Admin</div>
+            <div class="menu-item active" onclick="showSection('employees')">
+                👥 Employees
+            </div>
+            <div class="menu-item" onclick="showSection('dashboard')">
+                📊 Dashboard
+            </div>
+            <div class="menu-item" onclick="showSection('reports')">
+                📈 Reports
+            </div>
+            <div class="menu-item" onclick="logout()">
+                🚪 Logout
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="content-header">
+                <h1>Employee Management</h1>
+            </div>
+
+            <div class="content-body">
+                <!-- Alert Messages -->
+                <div id="alertMessage" class="alert"></div>
+
+                <!-- Add Employee Form -->
+                <div class="form-section">
+                    <h2>Add New Employee</h2>
+                    <form id="employeeForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="rfidNumber">RFID Number *</label>
+                                <input type="text" id="rfidNumber" name="rfidNumber" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="empId">Employee ID *</label>
+                                <input type="text" id="empId" name="empId" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="empName">Employee Name *</label>
+                                <input type="text" id="empName" name="empName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="siteName">Site Name *</label>
+                                <select id="siteName" name="siteName" required>
+                                    <option value="">Select Site</option>
+                                    <option value="Site A">Site A</option>
+                                    <option value="Site B">Site B</option>
+                                    <option value="Site C">Site C</option>
+                                    <option value="Site D">Site D</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="shift">Shift *</label>
+                                <select id="shift" name="shift" required>
+                                    <option value="">Select Shift</option>
+                                    <option value="Morning">Morning (6 AM - 2 PM)</option>
+                                    <option value="Evening">Evening (2 PM - 10 PM)</option>
+                                    <option value="Night">Night (10 PM - 6 AM)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span id="submitBtnText">Add Employee</span>
+                        </button>
+                        <button type="button" class="btn btn-danger" onclick="resetForm()" style="margin-left: 10px;">
+                            Cancel
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Loading Spinner -->
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p>Loading...</p>
+                </div>
+
+                <!-- Employees Table -->
+                <div class="table-container">
+                    <h2>Employee List</h2>
+                    <table id="employeesTable">
+                        <thead>
+                            <tr>
+                                <th>RFID Number</th>
+                                <th>Employee ID</th>
+                                <th>Name</th>
+                                <th>Site</th>
+                                <th>Shift</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="employeesTableBody">
+                            <!-- Table rows will be inserted here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div class="modal" id="editModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Edit Employee</h2>
+                <span class="close-modal" onclick="closeEditModal()">&times;</span>
+            </div>
+            <form id="editEmployeeForm">
+                <input type="hidden" id="editEmployeeId">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="editRfidNumber">RFID Number *</label>
+                        <input type="text" id="editRfidNumber" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editEmpId">Employee ID *</label>
+                        <input type="text" id="editEmpId" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editEmpName">Employee Name *</label>
+                        <input type="text" id="editEmpName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editSiteName">Site Name *</label>
+                        <select id="editSiteName" required>
+                            <option value="">Select Site</option>
+                            <option value="Site A">Site A</option>
+                            <option value="Site B">Site B</option>
+                            <option value="Site C">Site C</option>
+                            <option value="Site D">Site D</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="editShift">Shift *</label>
+                        <select id="editShift" required>
+                            <option value="">Select Shift</option>
+                            <option value="Morning">Morning (6 AM - 2 PM)</option>
+                            <option value="Evening">Evening (2 PM - 10 PM)</option>
+                            <option value="Night">Night (10 PM - 6 AM)</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success">Update Employee</button>
+                <button type="button" class="btn btn-danger" onclick="closeEditModal()" style="margin-left: 10px;">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

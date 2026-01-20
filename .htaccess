@@ -1,0 +1,18 @@
+Options -Indexes
+RewriteEngine On
+
+# Block sensitive files/folders
+RewriteRule ^(config|\.env|.*\.sql)$ - [F,L]
+
+# Allow API/Admin/uploads/frontend assets and real files/dirs through
+RewriteCond %{REQUEST_URI} !^/qsr/Tap-N-Eat/api/
+RewriteCond %{REQUEST_URI} !^/qsr/Tap-N-Eat/admin/
+RewriteCond %{REQUEST_URI} !^/qsr/Tap-N-Eat/uploads/
+RewriteCond %{REQUEST_URI} !^/qsr/Tap-N-Eat/frontend/assets/
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# SPA fallback to frontend index
+RewriteRule ^qsr/Tap-N-Eat/?$ /qsr/Tap-N-Eat/frontend/index.html [L]
+RewriteRule ^qsr/Tap-N-Eat/(.*)$ /qsr/Tap-N-Eat/frontend/index.html [L]
