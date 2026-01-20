@@ -1,0 +1,141 @@
+2026-01-06 17:55:36 +05:30: ❌ Polling error: fetch failed
+2026-01-06 17:55:40 +05:30: ❌ Polling error: fetch failed
+2026-01-06 17:55:41 +05:30: ❌ Polling error: fetch failed
+2026-01-06 17:56:37 +05:30: ❌ Polling error: fetch failed
+2026-01-06 18:05:11 +05:30: ❌ Polling error: fetch failed
+2026-01-06 18:05:13 +05:30: ❌ Polling error: fetch failed
+2026-01-06 18:11:03 +05:30: ❌ Polling error: fetch failed
+2026-01-06 18:11:32 +05:30: ❌ Polling error: fetch failed
+2026-01-06 18:21:29 +05:30: ❌ Polling error: fetch failed
+2026-01-06 18:50:48 +05:30: ❌ Polling error: fetch failed
+2026-01-07 10:08:39 +05:30: ❌ Polling error: fetch failed
+2026-01-07 11:11:14 +05:30: ❌ API error: 404
+2026-01-07 11:11:16 +05:30: ❌ API error: 404
+2026-01-07 11:11:18 +05:30: ❌ API error: 404
+2026-01-07 11:11:20 +05:30: ❌ API error: 404
+2026-01-07 11:11:22 +05:30: ❌ API error: 404
+2026-01-07 11:13:09 +05:30: ❌ Failed to print job #23: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 11:13:55 +05:30: ❌ Failed to print job #24: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 11:14:17 +05:30: ❌ Failed to print job #25: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 11:14:39 +05:30: ❌ Failed to print job #26: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 11:15:02 +05:30: ❌ Failed to print job #27: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 11:15:24 +05:30: ❌ Failed to print job #28: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 11:17:14 +05:30: ❌ Failed to print job #29: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 11:17:36 +05:30: ❌ Failed to print job #30: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 11:17:58 +05:30: ❌ Failed to print job #31: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 11:20:39 +05:30: ❌ Failed to print job #32: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 11:21:32 +05:30: ❌ Failed to print job #33: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 12:17:15 +05:30: ❌ Polling error: fetch failed
+2026-01-07 12:44:42 +05:30: ❌ Polling error: fetch failed
+2026-01-07 12:44:53 +05:30: ❌ Polling error: fetch failed
+2026-01-07 13:52:56 +05:30: ❌ Polling error: fetch failed
+2026-01-07 14:00:14 +05:30: ❌ Polling error: fetch failed
+2026-01-07 14:09:58 +05:30: ❌ Polling error: fetch failed
+2026-01-07 14:49:27 +05:30: ❌ Failed to print job #48: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 14:49:51 +05:30: ❌ Failed to print job #49: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 14:50:13 +05:30: ❌ Failed to print job #50: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 14:50:35 +05:30: ❌ Failed to print job #51: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 14:51:27 +05:30: ❌ Failed to print job #52: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 14:51:49 +05:30: ❌ Failed to print job #53: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 14:54:46 +05:30: ❌ Failed to print job #54: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 14:55:08 +05:30: ❌ Failed to print job #55: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 14:56:56 +05:30: ❌ Failed to print job #56: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 15:06:51 +05:30: ❌ Failed to print job #57: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 15:07:13 +05:30: ❌ Failed to print job #58: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 15:07:35 +05:30: ❌ Failed to print job #59: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 15:07:57 +05:30: ❌ Failed to print job #60: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 15:08:18 +05:30: ❌ Failed to print job #61: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 15:08:57 +05:30: ❌ Failed to print job #62: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 15:09:20 +05:30: ❌ Failed to print job #63: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 15:12:38 +05:30: ❌ Failed to print job #64: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 15:16:51 +05:30: ❌ Failed to print job #65: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 15:17:13 +05:30: ❌ Failed to print job #66: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 15:18:03 +05:30: ❌ Failed to print job #67: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 15:33:27 +05:30: ❌ Failed to print job #69: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 15:40:51 +05:30: ❌ Failed to print job #70: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 15:41:39 +05:30: ❌ Failed to print job #72: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 15:45:00 +05:30: ❌ Failed to print job #73: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 16:10:13 +05:30: ❌ API error: 500
+2026-01-07 16:12:22 +05:30: ❌ API error: 500
+2026-01-07 16:12:47 +05:30: ❌ API error: 500
+2026-01-07 16:12:49 +05:30: ❌ API error: 500
+2026-01-07 16:13:24 +05:30: ❌ Failed to print job #74: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 16:42:54 +05:30: ❌ Failed to print job #78: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 17:00:52 +05:30: ❌ Failed to print job #80: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 17:07:56 +05:30: ❌ Failed to print job #83: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 17:09:36 +05:30: ❌ Failed to print job #84: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-07 18:22:28 +05:30: ❌ API error: 500
+2026-01-07 18:22:30 +05:30: ❌ API error: 500
+2026-01-07 18:24:33 +05:30: ❌ Polling error: fetch failed
+2026-01-07 18:24:33 +05:30: ❌ Polling error: fetch failed
+2026-01-07 18:24:35 +05:30: ❌ Polling error: fetch failed
+2026-01-07 18:24:37 +05:30: ❌ Polling error: fetch failed
+2026-01-07 18:32:24 +05:30: ❌ Polling error: fetch failed
+2026-01-07 18:41:06 +05:30: ❌ Polling error: fetch failed
+2026-01-07 18:41:08 +05:30: ❌ Polling error: fetch failed
+2026-01-07 18:41:10 +05:30: ❌ Polling error: fetch failed
+2026-01-07 18:59:51 +05:30: ❌ Polling error: fetch failed
+2026-01-07 18:59:53 +05:30: ❌ Polling error: fetch failed
+2026-01-07 18:59:55 +05:30: ❌ Polling error: fetch failed
+2026-01-07 18:59:57 +05:30: ❌ Polling error: fetch failed
+2026-01-07 18:59:59 +05:30: ❌ Polling error: fetch failed
+2026-01-08 10:10:10 +05:30: ❌ Polling error: fetch failed
+2026-01-08 10:10:12 +05:30: ❌ Polling error: fetch failed
+2026-01-08 10:10:14 +05:30: ❌ Polling error: fetch failed
+2026-01-08 12:55:17 +05:30: ❌ Failed to print job #88: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-08 13:31:24 +05:30: ❌ Polling error: fetch failed
+2026-01-08 14:38:16 +05:30: ❌ Polling error: fetch failed
+2026-01-08 15:53:31 +05:30: ❌ Polling error: fetch failed
+2026-01-08 15:53:33 +05:30: ❌ Polling error: fetch failed
+2026-01-08 15:53:35 +05:30: ❌ Polling error: fetch failed
+2026-01-08 15:55:19 +05:30: ❌ Polling error: fetch failed
+2026-01-08 16:11:33 +05:30: ❌ API error: 500
+2026-01-08 16:11:35 +05:30: ❌ API error: 500
+2026-01-08 16:13:40 +05:30: ❌ API error: 500
+2026-01-08 16:33:50 +05:30: ❌ Failed to print job #89: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-08 16:34:12 +05:30: ❌ Failed to print job #90: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-08 16:34:38 +05:30: ❌ Failed to print job #91: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-08 16:35:02 +05:30: ❌ Failed to print job #92: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-08 16:35:24 +05:30: ❌ Failed to print job #93: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-08 16:35:46 +05:30: ❌ Failed to print job #94: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-08 16:36:07 +05:30: ❌ Failed to print job #95: connect ETIMEDOUT 192.168.0.105:9100
+2026-01-08 16:40:59 +05:30: ❌ API error: 500
+2026-01-08 16:41:47 +05:30: ❌ Polling error: fetch failed
+2026-01-08 16:41:49 +05:30: ❌ Polling error: fetch failed
+2026-01-08 16:41:51 +05:30: ❌ API error: 500
+2026-01-08 16:41:53 +05:30: ❌ API error: 500
+2026-01-08 16:41:55 +05:30: ❌ API error: 500
+2026-01-08 16:41:57 +05:30: ❌ API error: 500
+2026-01-08 16:41:59 +05:30: ❌ API error: 500
+2026-01-08 16:42:01 +05:30: ❌ API error: 500
+2026-01-08 16:42:03 +05:30: ❌ API error: 500
+2026-01-08 16:42:05 +05:30: ❌ API error: 500
+2026-01-08 16:42:07 +05:30: ❌ API error: 500
+2026-01-08 16:42:09 +05:30: ❌ API error: 500
+2026-01-08 16:42:11 +05:30: ❌ API error: 500
+2026-01-08 16:42:13 +05:30: ❌ API error: 500
+2026-01-08 16:42:15 +05:30: ❌ API error: 500
+2026-01-08 16:42:17 +05:30: ❌ API error: 500
+2026-01-08 16:42:19 +05:30: ❌ API error: 500
+2026-01-08 16:42:21 +05:30: ❌ API error: 500
+2026-01-08 16:42:23 +05:30: ❌ API error: 500
+2026-01-08 16:42:25 +05:30: ❌ API error: 500
+2026-01-08 16:42:27 +05:30: ❌ API error: 500
+2026-01-08 16:42:29 +05:30: ❌ API error: 500
+2026-01-08 16:42:31 +05:30: ❌ API error: 500
+2026-01-08 16:42:33 +05:30: ❌ API error: 500
+2026-01-08 16:42:35 +05:30: ❌ API error: 500
+2026-01-08 16:46:15 +05:30: ❌ Polling error: fetch failed
+2026-01-08 16:51:49 +05:30: ❌ Polling error: fetch failed
+2026-01-08 16:51:51 +05:30: ❌ Polling error: fetch failed
+2026-01-08 16:51:53 +05:30: ❌ Polling error: fetch failed
+2026-01-08 17:05:56 +05:30: ❌ Polling error: fetch failed
+2026-01-08 17:21:33 +05:30: ❌ Polling error: fetch failed
+2026-01-08 17:21:34 +05:30: ❌ Polling error: fetch failed
+2026-01-08 17:21:36 +05:30: ❌ Polling error: fetch failed
+2026-01-08 17:23:51 +05:30: ❌ Polling error: fetch failed
+2026-01-08 17:23:53 +05:30: ❌ Polling error: fetch failed
+2026-01-08 17:23:55 +05:30: ❌ Polling error: fetch failed
+2026-01-08 17:23:57 +05:30: ❌ Polling error: fetch failed
+2026-01-08 17:24:03 +05:30: ❌ Polling error: fetch failed
+2026-01-08 17:34:12 +05:30: ❌ Polling error: fetch failed
